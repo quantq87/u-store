@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6D1DAFABAE84F3F6298C8CC6 /* Pods_u_storeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDA55E6B41C54F0C2161FBB /* Pods_u_storeTests.framework */; };
+		A2A495351DC9D10C003BC312 /* USRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A495341DC9D10C003BC312 /* USRadiusButton.swift */; };
+		A2A495391DC9DE7E003BC312 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A495381DC9DE7E003BC312 /* HomeViewModel.swift */; };
+		A2A4953C1DC9DF29003BC312 /* PhotoManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4953B1DC9DF29003BC312 /* PhotoManagerModel.swift */; };
+		A2A4953F1DC9E1E3003BC312 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A4953D1DC9E1E3003BC312 /* Photos.framework */; };
+		A2A495401DC9E1E3003BC312 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A4953E1DC9E1E3003BC312 /* PhotosUI.framework */; };
 		A2B0DDCB1DAC7A37006FF021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0DDCA1DAC7A37006FF021 /* AppDelegate.swift */; };
 		A2B0DDCD1DAC7A37006FF021 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0DDCC1DAC7A37006FF021 /* HomeViewController.swift */; };
 		A2B0DDD01DAC7A37006FF021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B0DDCE1DAC7A37006FF021 /* Main.storyboard */; };
@@ -45,6 +50,11 @@
 		4C5B62452ADDD15BF25F89A5 /* Pods-u-store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-u-store.release.xcconfig"; path = "Pods/Target Support Files/Pods-u-store/Pods-u-store.release.xcconfig"; sourceTree = "<group>"; };
 		743753B4E1333D31586AF018 /* Pods-u-storeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-u-storeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-u-storeUITests/Pods-u-storeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0253178DAECD3859FAAA14 /* Pods_u_storeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_u_storeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A495341DC9D10C003BC312 /* USRadiusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USRadiusButton.swift; sourceTree = "<group>"; };
+		A2A495381DC9DE7E003BC312 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A2A4953B1DC9DF29003BC312 /* PhotoManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManagerModel.swift; sourceTree = "<group>"; };
+		A2A4953D1DC9E1E3003BC312 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A2A4953E1DC9E1E3003BC312 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		A2B0DDC71DAC7A37006FF021 /* u-store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "u-store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B0DDCA1DAC7A37006FF021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2B0DDCC1DAC7A37006FF021 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A4953F1DC9E1E3003BC312 /* Photos.framework in Frameworks */,
+				A2A495401DC9E1E3003BC312 /* PhotosUI.framework in Frameworks */,
 				AA9C79B1FD0FC0812788A0E5 /* Pods_u_store.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +110,8 @@
 		173FC40A4CC5F01021DB0AFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2A4953D1DC9E1E3003BC312 /* Photos.framework */,
+				A2A4953E1DC9E1E3003BC312 /* PhotosUI.framework */,
 				C77EEDF7A78C5CF7CC2155DD /* Pods_u_store.framework */,
 				BCDA55E6B41C54F0C2161FBB /* Pods_u_storeTests.framework */,
 				8F0253178DAECD3859FAAA14 /* Pods_u_storeUITests.framework */,
@@ -116,6 +130,54 @@
 				ADF25C78D425CD1C17046B39 /* Pods-u-storeUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2A495311DC9CF49003BC312 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2A495321DC9CF99003BC312 /* Custom */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2A495321DC9CF99003BC312 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A2A495331DC9CFB0003BC312 /* Button */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		A2A495331DC9CFB0003BC312 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A2A495341DC9D10C003BC312 /* USRadiusButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		A2A495361DC9DE25003BC312 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2A495371DC9DE4C003BC312 /* Home */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A2A495371DC9DE4C003BC312 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A2A495381DC9DE7E003BC312 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A2A4953A1DC9DEFA003BC312 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A2A4953B1DC9DF29003BC312 /* PhotoManagerModel.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		A2B0DDBE1DAC7A37006FF021 = {
@@ -144,6 +206,9 @@
 		A2B0DDC91DAC7A37006FF021 /* u-store */ = {
 			isa = PBXGroup;
 			children = (
+				A2A4953A1DC9DEFA003BC312 /* Manager */,
+				A2A495361DC9DE25003BC312 /* ViewModel */,
+				A2A495311DC9CF49003BC312 /* View */,
 				A2B0DDFD1DAC8CCE006FF021 /* Controller */,
 				A2B0DDCA1DAC7A37006FF021 /* AppDelegate.swift */,
 				A2B0DDCE1DAC7A37006FF021 /* Main.storyboard */,
@@ -451,6 +516,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A4953C1DC9DF29003BC312 /* PhotoManagerModel.swift in Sources */,
+				A2A495351DC9D10C003BC312 /* USRadiusButton.swift in Sources */,
+				A2A495391DC9DE7E003BC312 /* HomeViewModel.swift in Sources */,
 				A2B0DDFF1DAC8CFD006FF021 /* LoginViewController.swift in Sources */,
 				A2B0DDCD1DAC7A37006FF021 /* HomeViewController.swift in Sources */,
 				A2B0DDD31DAC7A37006FF021 /* u_store.xcdatamodeld in Sources */,
